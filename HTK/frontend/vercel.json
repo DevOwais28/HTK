@@ -1,7 +1,9 @@
+
+
 {
   "version": 2,
   "routes": [
-    { "handle": "filesystem" },       // Serve all static assets directly
-    { "src": "/.*", "dest": "/index.html" }  // SPA fallback for routing
+    { "handle": "filesystem" },
+    { "src": "/.*", "dest": "/index.html" }
   ]
 }
