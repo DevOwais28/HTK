@@ -1,5 +1,7 @@
 {
-  "rewrites": [
-    { "source": "/(.*)", "destination": "/index.html" }
+  "version": 2,
+  "routes": [
+    { "handle": "filesystem" },       // Serve all static assets directly
+    { "src": "/.*", "dest": "/index.html" }  // SPA fallback for routing
   ]
 }
